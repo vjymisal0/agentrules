@@ -105,7 +105,7 @@ jobs:
 You can also import `agentrules` into your own Node.js build scripts:
 
 ```javascript
-import { detectWorkspace, syncFiles, checkSync } from 'agentrules';
+import { detectWorkspace, syncFiles, checkSync } from '@vjymisal0/agentrules';
 
 // Analyze workspace
 const { result } = detectWorkspace();

@@ -54,7 +54,7 @@ ${content}`
  * Sync master content to target tool configuration files.
  * @param {string} rootDir
  * @param {string[]} targetKeys
- * @returns {{ written: string[], skipped: string[] }}
+ * @returns {{ written: Array<{ key: string, path: string }>, skipped: Array<{ key: string, path: string }> }}
  */
 export function syncFiles(rootDir = process.cwd(), targetKeys = Object.keys(TARGETS)) {
   const masterPath = path.join(rootDir, 'AGENT_RULES.md');

@@ -1,9 +1,17 @@
 {
   "name": "@vjymisal0/agentrules",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Universal AI context and rules synchronizer for Claude Code, Cursor, Copilot, Gemini, Windsurf, and custom agents.",
   "type": "module",
   "main": "src/index.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.js"
+    },
+    "./package.json": "./package.json"
+  },
   "bin": {
     "agentrules": "bin/cli.js"
   },
@@ -47,6 +55,7 @@
     "bin",
     "src",
     "README.md",
-    "LICENSE"
+    "LICENSE",
+    "CHANGELOG.md"
   ]
 }
